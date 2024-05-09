@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+section{
+    padding: 3rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+*{
+    font-family: 'Nunnito' , sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    text-transform: capitalize ;
+}
+:root{
+    --main-color:#DA2C32;
+   --light-color:#666;
+   --light-bg:#eee;
+   --white:#fff;
+   --black:#303030;
+   --border:.1rem solid var(--light-color);
+   --box-shodow:0 10px 20px rgba(0,0,0,.1);
+}
+:root{
+    --red: #FF5a3c;
+    --light-red: #f9edeb ;
+}
+
+
+
+.button{
+    margin-top: 16px;
+    display: inline-block;
+    padding: 12px 50px;
+    border-radius: 10px;
+    font-size: 25px;
+    color: #fff;
+    background: var(--red);
+    cursor: pointer ;
+    width: 100%;
+    border: 1px solid;
+
+
+}
+
+.button:hover{
+    color: var(--red);
+    background: #fff;
+}
+
+header {
+    top: 0;left: 0;right: 0;
+    display: flex ;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    box-shadow: 0 3px 5px rgb(0, 0, .1);
+    position: sticky;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius:10px ;
+    z-index: 1;
+    background: #fff;
+}
+
+header .logo {
+    font-weight: bolder;
+    font-size: 32px;
+    color : #333
+}
+
+header .logo span {
+    color: var(--red);
+}
+
+
+
+
+.icons {
+    display: flex;
+    gap: 20px; /* Adjust the space between items */
+}
+
+.icons button, .icons a {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: var(--red);
+    background: var(--light-red);
+    text-decoration: none;
+    border: none;
+    font-size: 18px;
+
+    cursor: pointer;
+}
+.icons button i, .icons a i{
+    padding-right: 7px;
+}
+.icons button:hover, .icons a:hover {
+    color: var(--light-red);
+    background-color: var(--red);
+}
+
+
+
+/* header section end  */
+
+
+.property-form form{
+    background-color: rgb(245, 243, 243);
+    padding: 10px;
+    box-shadow: var(--box-shodow);
+}
+
+.property-form form h3{
+    font-size: 32px;
+    text-align: center;
+    padding-bottom: 15px;
+    color: var(--black);
+    text-transform: capitalize;
+}
+
+
+.property-form form .box{
+    flex: 1 1 1px;
+}
+
+.property-form form .box .input{
+    width: 70%;
+    border: var(--border);
+    margin: 10px 0;
+    padding: 20px;
+    color: var(--black);
+    font-size: 20px ;
+}
+
+.property-form form textarea{
+    height: 100px;
+    resize: none;
+}
+
+.property-form form .box .input option[selected]{
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.property-form form .box .image{
+    height: 100px;
+    width: 100%;
+    object-fit: contain;
+    padding-top: 16px;
+    object-position: left;
+}
+
+.property-form form .box p{
+    font-size: 16px;
+    color: var(--light-color);
+    padding-top: 16px;
+ }
+
+.property-form form .box p span{
+    color: var(--main-color);
+}
+
+
+
+/* footer section start  */
+
+footer {
+    padding-left: 60px;
+    padding-right: 50px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+footer .footer-container {
+    background: #fff;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+footer .footer-container .box-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+footer .footer-container .box-container .box {
+    flex: 0 1 calc(10% - 10px);
+    display: block;
+    font-size: 20px;
+    color: #666;
+    padding: 8px 0;
+}
+
+footer .footer-container .box-container .box a:hover{
+    color: var(--red) ;
+}
+
+footer .footer-container .credits {
+    margin-top: 32px;
+    padding: 24px;
+    padding-top: 2.5rem;
+    font-size: 32px;
+    align-items: center;
+    color: #333;
+}
+
+footer {
+    background-color: #f1f1f1;
+    padding: 20px 45px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+/* footer section end  */
